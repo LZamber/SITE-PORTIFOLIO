@@ -36,12 +36,12 @@ export function Footer() {
   return (
     <footer className="relative noise-block bg-paper text-ink overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 grid-bg-dark opacity-70" />
-      <div aria-hidden="true" className="absolute -right-10 -top-20 font-display text-[8rem] min-[480px]:text-[14rem] sm:text-[22rem] lg:text-[28rem] leading-none text-purple/10 select-none pointer-events-none overflow-hidden">
+      <div aria-hidden="true" className="absolute -right-10 -top-20 font-display text-[8rem] min-[480px]:text-[14rem] sm:text-[28rem] leading-none text-purple/10 select-none pointer-events-none overflow-hidden">
         *
       </div>
       <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 text-center">
-        <p className="text-ink/60 uppercase tracking-[0.3em] text-[9px] sm:text-[10px] mb-4 sm:mb-6">Vamos conversar</p>
-        <h2 className="font-display text-5xl min-[480px]:text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] mb-8 sm:mb-12 text-ink leading-[0.9]">
+        <p className="text-ink/60 uppercase tracking-[0.3em] max-md:text-[9px] text-xs mb-4 sm:mb-6">Vamos conversar</p>
+        <h2 className="font-display uppercase max-md:text-5xl max-md:min-[480px]:text-6xl text-6xl sm:text-8xl md:text-[10rem] mb-8 sm:mb-12 text-ink leading-[0.9]">
           Bora criar
           <br />
           <span className="text-purple">algo bom?</span>
@@ -50,7 +50,7 @@ export function Footer() {
           href="https://wa.me/5555996815492"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-3 bg-purple text-white hover:bg-purple-glow transition-colors duration-300 px-8 sm:px-12 py-4 sm:py-6 rounded-full text-base sm:text-xl font-medium"
+          className="inline-flex items-center gap-3 bg-purple text-white hover:bg-purple-glow transition-colors duration-300 max-md:px-6 max-md:py-3 max-md:text-sm px-10 py-5 rounded-full text-lg font-medium"
         >
           Fale comigo
           <span aria-hidden="true">→</span>

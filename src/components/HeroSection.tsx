@@ -60,7 +60,7 @@ export function HeroSection() {
         <div className="relative mt-2 w-full">
           <h1
             aria-hidden="true"
-            className="font-display absolute inset-x-0 top-10 z-[1] text-center text-white select-none pointer-events-none drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)] text-[clamp(3.75rem,20vw,6rem)] leading-[0.84]"
+            className="font-display uppercase absolute inset-x-0 top-10 z-[1] text-center text-white select-none pointer-events-none drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)] text-[clamp(3.75rem,20vw,6rem)] leading-[0.84]"
           >
             <span className="block">Estratégia</span>
             <span className="block text-purple-glow">& Design</span>
@@ -101,10 +101,10 @@ export function HeroSection() {
 
         <h1
           aria-hidden="true"
-          className="font-display absolute inset-x-0 top-[8%] z-[5] text-center text-white select-none pointer-events-none drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)] px-2 text-[clamp(2.75rem,14vw,20rem)] leading-[0.85]"
+          className="font-display uppercase absolute inset-x-0 top-[8%] z-[5] text-center text-white select-none pointer-events-none drop-shadow-[0_8px_30px_rgba(0,0,0,0.6)] px-2 text-[clamp(3rem,17vw,20rem)] leading-[0.85]"
         >
           <span className="block">Estratégia</span>
-          <span className="block text-purple-glow -translate-x-[12%]">& Design</span>
+          <span className="block text-purple-glow -translate-x-[6%] sm:-translate-x-[12%]">& Design</span>
         </h1>
 
         <img
@@ -125,26 +125,26 @@ export function HeroSection() {
 
 export function AboutCta() {
   return (
-    <section className="relative bg-hard-radial py-20 sm:py-32 lg:py-48 overflow-hidden">
+    <section className="relative bg-hard-radial py-20 sm:py-48 overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 grid-bg opacity-40" />
       <div
         aria-hidden="true"
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[8rem] min-[480px]:text-[14rem] sm:text-[28rem] lg:text-[40rem] leading-none text-purple/15 select-none pointer-events-none overflow-hidden"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[8rem] min-[480px]:text-[14rem] sm:text-[40rem] leading-none text-purple/15 select-none pointer-events-none overflow-hidden"
       >
         *
       </div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <p className="text-sm sm:text-lg lg:text-xl text-white font-medium mb-4 sm:mb-6 leading-snug">
+        <p className="max-md:text-xs text-sm sm:text-2xl text-white font-medium mb-4 sm:mb-6 leading-snug">
           Quer entender como eu penso e
         </p>
-        <h2 className="font-display text-purple-glow text-5xl min-[480px]:text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] leading-[0.9]">
+        <h2 className="font-display uppercase text-purple-glow max-md:text-5xl max-md:min-[480px]:text-6xl text-5xl sm:text-8xl md:text-[10rem] leading-[0.9]">
           quem eu sou
           <br />
-          fora do grid?
+          <span className="whitespace-nowrap">fora do grid?</span>
         </h2>
         <Link
           to="/sobre"
-          className="mt-8 sm:mt-12 inline-flex items-center gap-3 bg-purple hover:bg-purple-glow transition-colors duration-300 px-8 sm:px-12 py-4 sm:py-6 rounded-full text-base sm:text-xl font-medium text-white"
+          className="mt-8 sm:mt-12 inline-flex items-center gap-3 bg-purple hover:bg-purple-glow transition-colors duration-300 max-md:px-6 max-md:py-3 max-md:text-sm px-8 sm:px-10 py-4 sm:py-5 rounded-full text-base sm:text-lg font-medium text-white"
         >
           Mais de mim
           <span aria-hidden="true">→</span>
