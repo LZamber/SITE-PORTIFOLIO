@@ -134,17 +134,17 @@ export function AboutCta() {
         *
       </div>
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <p className="text-sm sm:text-xl lg:text-2xl text-white font-medium mb-4 sm:mb-6 leading-snug">
+        <p className="text-sm sm:text-lg lg:text-xl text-white font-medium mb-4 sm:mb-6 leading-snug">
           Quer entender como eu penso e
         </p>
-        <h2 className="font-display text-purple-glow text-3xl min-[480px]:text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] leading-[0.9]">
+        <h2 className="font-display text-purple-glow text-5xl min-[480px]:text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] leading-[0.9]">
           quem eu sou
           <br />
           fora do grid?
         </h2>
         <Link
           to="/sobre"
-          className="mt-8 sm:mt-12 inline-flex items-center gap-3 bg-purple hover:bg-purple-glow transition-colors duration-300 px-6 sm:px-10 py-3.5 sm:py-5 rounded-full text-sm sm:text-lg font-medium text-white"
+          className="mt-8 sm:mt-12 inline-flex items-center gap-3 bg-purple hover:bg-purple-glow transition-colors duration-300 px-8 sm:px-12 py-4 sm:py-6 rounded-full text-base sm:text-xl font-medium text-white"
         >
           Mais de mim
           <span aria-hidden="true">→</span>

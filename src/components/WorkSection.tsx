@@ -36,8 +36,8 @@ export function WorkSection({
         : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-10'
 
   const linkButtonClass = isLight
-    ? 'shrink-0 inline-flex items-center gap-2 text-xs sm:text-sm border rounded-full px-3 py-1.5 sm:px-4 sm:py-2 transition border-ink/20 text-ink hover:bg-purple hover:text-white hover:border-purple'
-    : 'shrink-0 inline-flex items-center gap-2 text-xs sm:text-sm border rounded-full px-3 py-1.5 sm:px-4 sm:py-2 transition border-white/20 text-white hover:bg-purple hover:border-purple'
+    ? 'shrink-0 inline-flex items-center gap-2 text-sm sm:text-base border rounded-full px-5 py-2.5 sm:px-7 sm:py-3 transition border-ink/20 text-ink hover:bg-purple hover:text-white hover:border-purple'
+    : 'shrink-0 inline-flex items-center gap-2 text-sm sm:text-base border rounded-full px-5 py-2.5 sm:px-7 sm:py-3 transition border-white/20 text-white hover:bg-purple hover:border-purple'
 
   const sectionClass = [
     'relative py-20 sm:py-32',
@@ -72,13 +72,13 @@ export function WorkSection({
         >
           <div className="min-w-0">
             <p
-              className={`text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2 ${
+              className={`text-[9px] sm:text-[10px] uppercase tracking-[0.3em] mb-2 ${
                 isLight ? 'text-purple' : 'text-purple-glow'
               }`}
             >
               ✻ Meu trabalho
             </p>
-            <h2 className="font-display text-3xl min-[480px]:text-4xl sm:text-6xl md:text-8xl break-words">{title}</h2>
+            <h2 className="font-display text-5xl min-[480px]:text-6xl sm:text-8xl md:text-[10rem] lg:text-[12rem] leading-[0.9] break-words">{title}</h2>
           </div>
           <a href={linkHref} target="_blank" rel="noreferrer" className={`${linkButtonClass} self-start sm:self-auto`}>
             {linkLabel}

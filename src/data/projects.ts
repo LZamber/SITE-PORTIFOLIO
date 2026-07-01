@@ -83,7 +83,7 @@ export const MOTION_PROJECTS: Project[] = [
   {
     title: 'Abertura — Liquid Type',
     year: '2024',
-    image: '/images/motion-1.jpg',
+    image: '',
     url: 'https://www.behance.net/lzamber',
   },
 ]

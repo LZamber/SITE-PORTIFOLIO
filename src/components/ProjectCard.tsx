@@ -13,18 +13,25 @@ export function ProjectCard({ project, aspect = 'square', showYear = true, light
 
   return (
     <a href={project.url} target="_blank" rel="noreferrer" className="group block">
-      <div className={`relative overflow-hidden bg-white/5 border border-white/10 ${aspectClass}`}>
-        <img
-          src={project.image}
-          alt={project.title}
-          loading="lazy"
-          className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
-        />
+      <div className={`relative overflow-hidden border ${aspectClass} ${light ? 'bg-ink/5 border-ink/15' : 'bg-white/5 border-white/10'}`}>
+        {project.image ? (
+          <img
+            src={project.image}
+            alt={project.title}
+            loading="lazy"
+            className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <div
+            aria-hidden="true"
+            className={`w-full h-full ${light ? 'bg-white' : 'bg-ink/40'}`}
+          />
+        )}
         <div className="absolute inset-0 bg-purple/0 group-hover:bg-purple/40 transition duration-300 mix-blend-multiply pointer-events-none" />
       </div>
       <div className="flex items-start justify-between gap-2 sm:gap-4 pt-3">
-        <h3 className="font-display text-base sm:text-xl md:text-2xl leading-[1.15] min-w-0 break-words">{project.title}</h3>
-        <span className="text-purple-glow text-base sm:text-lg shrink-0 mt-0.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition">
+        <h3 className="font-display text-lg sm:text-2xl md:text-3xl leading-[1.15] min-w-0 break-words">{project.title}</h3>
+        <span className="text-purple-glow text-lg sm:text-xl shrink-0 mt-0.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition">
           ↗
         </span>
       </div>
