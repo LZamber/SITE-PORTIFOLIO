@@ -22,9 +22,9 @@ export function ProjectCard({ project, aspect = 'square', showYear = true, light
         />
         <div className="absolute inset-0 bg-purple/0 group-hover:bg-purple/40 transition duration-300 mix-blend-multiply pointer-events-none" />
       </div>
-      <div className="flex items-start justify-between gap-4 pt-3">
-        <h3 className="font-display text-lg sm:text-xl md:text-2xl leading-[1.15]">{project.title}</h3>
-        <span className="text-purple-glow text-lg shrink-0 group-hover:translate-x-1 group-hover:-translate-y-1 transition">
+      <div className="flex items-start justify-between gap-2 sm:gap-4 pt-3">
+        <h3 className="font-display text-base sm:text-xl md:text-2xl leading-[1.15] min-w-0 break-words">{project.title}</h3>
+        <span className="text-purple-glow text-base sm:text-lg shrink-0 mt-0.5 group-hover:translate-x-1 group-hover:-translate-y-1 transition">
           ↗
         </span>
       </div>

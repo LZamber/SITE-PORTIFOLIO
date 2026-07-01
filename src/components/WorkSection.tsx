@@ -54,7 +54,7 @@ export function WorkSection({
           <div aria-hidden="true" className="absolute inset-0 grid-bg-dark opacity-70" />
           <div
             aria-hidden="true"
-            className="absolute -left-10 top-10 font-display text-[20rem] leading-none text-purple/15 select-none pointer-events-none"
+            className="hidden sm:block absolute -left-10 top-10 font-display text-[14rem] md:text-[20rem] leading-none text-purple/15 select-none pointer-events-none"
           >
             *
           </div>
@@ -66,7 +66,7 @@ export function WorkSection({
       <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6">
         <div
           id={id}
-          className={`grid grid-cols-[minmax(0,1fr)_auto] items-end gap-4 pb-6 sm:pb-8 border-b mb-8 sm:mb-10 scroll-mt-20 ${
+          className={`flex flex-col gap-4 sm:grid sm:grid-cols-[minmax(0,1fr)_auto] sm:items-end pb-6 sm:pb-8 border-b mb-8 sm:mb-10 scroll-mt-20 ${
             isLight ? 'border-ink/15' : 'border-white/10'
           }`}
         >
@@ -78,9 +78,9 @@ export function WorkSection({
             >
               ✻ Meu trabalho
             </p>
-            <h2 className="font-display text-4xl sm:text-6xl md:text-8xl">{title}</h2>
+            <h2 className="font-display text-3xl min-[480px]:text-4xl sm:text-6xl md:text-8xl break-words">{title}</h2>
           </div>
-          <a href={linkHref} target="_blank" rel="noreferrer" className={linkButtonClass}>
+          <a href={linkHref} target="_blank" rel="noreferrer" className={`${linkButtonClass} self-start sm:self-auto`}>
             {linkLabel}
           </a>
         </div>

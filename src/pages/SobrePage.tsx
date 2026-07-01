@@ -27,15 +27,15 @@ export function SobrePage() {
         <div aria-hidden="true" className="absolute inset-0 grid-bg opacity-40 mix-blend-overlay" />
         <div
           aria-hidden="true"
-          className="absolute -right-6 sm:-right-10 bottom-[30%] sm:bottom-[35%] font-display text-[10rem] sm:text-[18rem] lg:text-[24rem] leading-none text-purple-glow/60 select-none pointer-events-none overflow-hidden"
+          className="absolute -right-4 sm:-right-10 bottom-[15%] sm:bottom-[35%] font-display text-[6rem] sm:text-[18rem] lg:text-[24rem] leading-none text-purple-glow/40 sm:text-purple-glow/60 select-none pointer-events-none overflow-hidden"
         >
           *
         </div>
-        <div className="relative w-full max-w-[1400px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 pt-28 sm:pt-32">
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-4 sm:px-6 pb-12 sm:pb-16 pt-28 sm:pt-32">
           <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-purple-glow mb-4 sm:mb-6">
             ✻ Mais de mim
           </p>
-          <h1 className="font-display text-5xl sm:text-7xl md:text-9xl lg:text-[12rem] leading-[0.85] text-white">
+          <h1 className="font-display text-4xl min-[480px]:text-5xl sm:text-7xl md:text-9xl lg:text-[12rem] leading-[0.85] text-white">
             Fora
             <br />
             <span className="text-purple-glow">do grid</span>
@@ -100,7 +100,7 @@ export function SobrePage() {
         <div aria-hidden="true" className="absolute inset-0 grid-bg opacity-40" />
         <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           <div className="lg:col-span-7">
-            <h2 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9]">
+            <h2 className="font-display text-3xl min-[480px]:text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9]">
               Fora
               <br />
               das telas,

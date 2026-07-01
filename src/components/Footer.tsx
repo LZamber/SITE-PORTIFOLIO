@@ -36,12 +36,12 @@ export function Footer() {
   return (
     <footer className="relative noise-block bg-paper text-ink overflow-hidden">
       <div aria-hidden="true" className="absolute inset-0 grid-bg-dark opacity-70" />
-      <div aria-hidden="true" className="absolute -right-10 -top-20 font-display text-[14rem] sm:text-[22rem] lg:text-[28rem] leading-none text-purple/10 select-none pointer-events-none overflow-hidden">
+      <div aria-hidden="true" className="absolute -right-10 -top-20 font-display text-[8rem] min-[480px]:text-[14rem] sm:text-[22rem] lg:text-[28rem] leading-none text-purple/10 select-none pointer-events-none overflow-hidden">
         *
       </div>
       <div className="relative max-w-[1400px] mx-auto px-4 sm:px-6 py-16 sm:py-24 lg:py-32 text-center">
         <p className="text-ink/60 uppercase tracking-[0.3em] text-[10px] sm:text-xs mb-4 sm:mb-6">Vamos conversar</p>
-        <h2 className="font-display text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] mb-8 sm:mb-12 text-ink leading-[0.9]">
+        <h2 className="font-display text-3xl min-[480px]:text-4xl sm:text-6xl md:text-8xl lg:text-[10rem] mb-8 sm:mb-12 text-ink leading-[0.9]">
           Bora criar
           <br />
           <span className="text-purple">algo bom?</span>
