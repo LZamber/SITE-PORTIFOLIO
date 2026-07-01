@@ -23,7 +23,7 @@ export function Header() {
     e.preventDefault()
     if (location.pathname === '/') {
       scrollToTop()
-      window.history.replaceState(null, '', '/')
+      navigate({ pathname: '/' }, { replace: true })
     } else {
       navigate('/')
     }
@@ -31,11 +31,13 @@ export function Header() {
 
   const handleSectionClick = (e: MouseEvent, sectionId: string) => {
     e.preventDefault()
+    const target = { pathname: '/', hash: `#${sectionId}` } as const
+
     if (location.pathname === '/') {
       scrollToSection(sectionId)
-      window.history.replaceState(null, '', `#${sectionId}`)
+      navigate(target, { replace: true })
     } else {
-      navigate(`/#${sectionId}`)
+      navigate(target)
     }
   }
 

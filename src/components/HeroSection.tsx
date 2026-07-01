@@ -18,7 +18,7 @@ function HeroDecorations() {
       </div>
 
       <div className="absolute right-[5%] top-[35%] w-40 lg:w-48 rotate-[4deg] bg-purple text-white p-3 border border-purple-glow shadow-2xl z-30">
-        <p className="font-display text-lg lg:text-xl leading-tight">
+        <p className="font-display uppercase text-lg lg:text-xl leading-tight">
           Direção
           <br />
           de Arte

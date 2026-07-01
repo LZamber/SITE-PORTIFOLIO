@@ -137,6 +137,19 @@
   .animate-marquee-rev {
     animation: marquee-rev 40s linear infinite;
   }
+
+  .marquee-layer {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    will-change: transform;
+  }
+
+  .marquee-track {
+    backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    will-change: transform;
+  }
 }
 
 @keyframes marquee {

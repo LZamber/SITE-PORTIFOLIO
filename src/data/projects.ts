@@ -75,8 +75,8 @@ export const DESIGN_PROJECTS: Project[] = [
 
 export const MOTION_PROJECTS: Project[] = [
   {
-    title: 'Motion — Novo trabalho',
-    year: '2025',
+    title: 'PUCRS no South Summit 2026',
+    year: '2026',
     image: '/images/motion-new-thumb.jpg',
     url: '/images/motion-new.mp4',
   },
